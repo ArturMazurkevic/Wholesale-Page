@@ -1,0 +1,211 @@
+body main {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-end;
+   padding-left: 40px;
+   padding-bottom: 40px;
+   height: 100vh;
+   background-color: black;
+   margin: 10px;
+    }
+
+.yellow-square {
+  position: relative;
+  max-height: 180px;
+  margin: 10px;
+  }
+
+.yellow-square-parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 160px;
+  height: 180px;
+  }
+
+.yellow-square-parent div {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  }
+
+.yellow-text-parent h2 {
+  position: absolute;
+  top: -135px;
+  left: 30px;
+  font-family: 'Play';
+  color: #fff;
+  font-size: 145px;
+  text-shadow: 5px 10px 10px  #000;
+  }
+
+.yellow-text-parent p {
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  font-family: 'Play';
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 5px 5px 10px  #000;
+  }
+
+.yellow-square-parent div:nth-child(9n-6) {
+  background-color: #ffef00;
+  }
+
+.yellow-square-parent div:nth-child(5n-4) {
+  background-color: #fce205;
+  }
+
+.yellow-square-parent div:nth-child(5n-3) {
+  background-color: #e4cd05;
+  }
+
+.yellow-square-parent div:nth-child(5n+3) {
+  background-color: rgba(246, 241, 18, 1);
+  }
+
+.yellow-square-parent div:nth-child(5n-1) {
+  background-color: #fdc12a;
+  }
+
+.yellow-square-parent div:nth-child(5n+5) {
+  background-color: #fee227;
+  }
+
+.yellow-square-parent div:nth-child(5) {
+  background-color: #f9a602;
+  }
+
+.yellow-square-parent div:nth-child(64), .yellow-square-parent div:nth-child(16), .yellow-square-parent div:nth-child(25), .yellow-square-parent div:nth-child(5){
+  background-color: #e4cd05;;
+  }
+
+.yellow-square-parent div:nth-child(10), .square-parent div:nth-child(56) {
+  background-color: #fff017;
+  }
+
+.yellow-square-parent div:nth-child(20), .square-parent div:nth-child(25), .square-parent div:nth-child(45), .square-parent div:nth-child(68)  {
+  background-color: #eee600;
+  }
+
+.orange-square {
+  position: relative;
+  max-height: 180px;
+  margin: 10px;
+  }
+
+.orange-square-parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 160px;
+  height: 180px;
+  }
+
+.orange-square-parent div {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  }
+
+.orange-text-parent h2 {
+  position: absolute;
+  top: -135px;
+  left: 38px;
+  font-family: 'Play';
+  color: #fff;
+  font-size: 145px;
+  text-shadow: 5px 10px 10px  #000;
+  }
+
+.orange-text-parent p {
+  position: absolute;
+  top: 115px;
+  left: 65px;
+  font-family: 'Play';
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 5px 7px 10px  #000;
+  }
+
+.orange-square-parent div:nth-child(5n-4) {
+  background-color: #ff5f00;
+  }
+
+.orange-square-parent div:nth-child(5n-3) {
+  background-color: #ff6f1d;
+  }
+
+.orange-square-parent div:nth-child(5n+3) {
+  background-color: #ff770d;
+  }
+
+.orange-square-parent div:nth-child(5n-1) {
+  background-color: #ffa068;
+  }
+
+.orange-square-parent div:nth-child(5n+5) {
+  background-color: #ff7b25;
+  }
+
+.red-square {
+  position: relative;
+  max-height: 180px;
+  margin: 10px;
+  }
+
+.red-square-parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 160px;
+  height: 180px;
+  }
+
+.red-square-parent div {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  }
+
+.red-text-parent h2 {
+  position: absolute;
+  top: -135px;
+  left: 30px;
+  font-family: 'Play';
+  color: #fff;
+  font-size: 145px;
+  text-shadow: 5px 10px 10px  #000;
+  }
+
+.red-text-parent p {
+  position: absolute;
+  top: 115px;
+  left: 25px;
+  font-family: 'Play';
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 5px 5px 10px  #000;
+  }
+
+.red-square-parent div:nth-child(5n-4) {
+  background-color: #ff0000;
+  }
+
+.red-square-parent div:nth-child(5n-3) {
+  background-color: #bb0000;
+  }
+
+.red-square-parent div:nth-child(5n+3) {
+  background-color: #dd0000;
+  }
+
+.red-square-parent div:nth-child(5n-1) {
+  background-color: #9a0000;
+  }
+
+.red-square-parent div:nth-child(5n+5) {
+  background-color: #790001;
+  }

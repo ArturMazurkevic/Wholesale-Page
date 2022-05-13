@@ -1,24 +1,47 @@
 .b2b-main {
-  z-index: 2;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  margin-top: 70px;
+  align-items: center;
+  width: 35%;
+}
+
+.squares {
+  display: flex;
+  z-index: 1;
 }
 
 .yellow-square {
   position: relative;
   margin: 10px;
   max-height: 180px;
+  -webkit-animation-name: my;
+          animation-name: my;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   }
 
+  @keyframes my {
+    0%{opacity: 0;}
+
+    100%{ opacity: 1;}
+
+
+}
+
+
+
 .yellow-square-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  width: 160px;
-  height: 180px;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 130px;
+  height: 120px;
+}
+
+
 
 .yellow-square-parent div {
   width: 20px;
@@ -27,24 +50,29 @@
 
 .yellow-text-parent h2 {
   position: absolute;
-  top: -135px;
+  top: -90px;
   left: 30px;
   font-family: 'Play';
   color: #fff;
-  font-size: 145px;
+  font-size: 95px;
   text-shadow: 5px 10px 10px  #000;
+}
+
+  .yellow-text-parent h2:hover {
+    transform: scale(1.2);
   }
 
 .yellow-text-parent p {
   position: absolute;
-  top: 115px;
-  left: 25px;
+  top: 75px;
+  left: 30px;
   font-family: 'Play';
-  font-size: 22px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 5px 5px 10px  #000;
   }
+
 
 
 
@@ -75,15 +103,25 @@
 
 .orange-square {
   position: relative;
-  max-height: 180px;
   margin: 10px;
+  -webkit-animation-name: myr;
+          animation-name: my;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  }
+
+  @keyframes myr {
+    0%{opacity: 0;}
+
+    100%{ opacity: 1;}
+
   }
 
 .orange-square-parent {
   display: flex;
   flex-wrap: wrap;
-  width: 160px;
-  height: 180px;
+  width: 130px;
+  height: 120px;
   }
 
 .orange-square-parent div {
@@ -94,20 +132,20 @@
 
 .orange-text-parent h2 {
   position: absolute;
-  top: -135px;
-  left: 38px;
+  top: -90px;
+  left: 33px;
   font-family: 'Play';
   color: #fff;
-  font-size: 145px;
+  font-size: 95px;
   text-shadow: 5px 10px 10px  #000;
   }
 
 .orange-text-parent p {
   position: absolute;
-  top: 115px;
-  left: 65px;
+  top: 75px;
+  left: 50px;
   font-family: 'Play';
-  font-size: 22px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 5px 7px 10px  #000;
@@ -135,16 +173,25 @@
 
 .red-square {
   position: relative;
-  max-height: 180px;
   margin: 10px;
+  -webkit-animation-name: mys ;
+          animation-name: mys;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  }
+
+  @keyframes mys{
+    0%{opacity: 0;}
+
+    100%{ opacity: 1;}
   }
 
 .red-square-parent {
   display: flex;
   flex-wrap: wrap;
-  width: 160px;
-  height: 180px;
-  }
+  width: 130px;
+  height: 120px;
+}
 
 .red-square-parent div {
   width: 20px;
@@ -154,20 +201,20 @@
 
 .red-text-parent h2 {
   position: absolute;
-  top: -135px;
+  top: -90px;
   left: 30px;
   font-family: 'Play';
   color: #fff;
-  font-size: 145px;
+  font-size: 95px;
   text-shadow: 5px 10px 10px  #000;
   }
 
 .red-text-parent p {
   position: absolute;
-  top: 115px;
-  left: 25px;
+  top: 75px;
+  left: 30px;
   font-family: 'Play';
-  font-size: 22px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 5px 5px 10px  #000;
@@ -202,10 +249,10 @@
     border-radius: 0 0 5px 0;
   }
 
-  .yellow-square-parent div:nth-child(8),.orange-square-parent div:nth-child(8), .red-square-parent div:nth-child(8) {
+  .yellow-square-parent div:nth-child(6),.orange-square-parent div:nth-child(6), .red-square-parent div:nth-child(6) {
     border-radius: 0 5px 0 0;
   }
 
-  .yellow-square-parent div:nth-child(65),.orange-square-parent div:nth-child(65), .red-square-parent div:nth-child(65) {
+  .yellow-square-parent div:nth-child(31),.orange-square-parent div:nth-child(31), .red-square-parent div:nth-child(31) {
     border-radius: 0 0 0 5px;
   }

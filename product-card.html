@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #000;
+      color: #fff;
+      }
+    .productcard-parent {
+      display: block;
+      position: relative;
+      width: 18%;
+      height: 320px;
+      border: 1px solid red;
+      background-color: #1e1e1e;
+    }
+
+      .productcard-image {
+        position: absolute;
+        display: block;
+        top: 35px;
+        left: -35px;
+        z-index: 1;
+        width: 100%;
+        height: 250px;
+
+        background-image: linear-gradient(120deg, #d6182a 0%, #0a5d00 60%, #d6182a 90%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        }
+
+        .productcard-image img {
+          max-width: 30%;
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+
+
+
+        .product-description {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 100%;
+          border: 1px solid blue;
+          background-color: #1e1e1e;
+          transition: 1s;
+          font-family: "Play";
+        }
+
+        .product-description h3 {
+    margin-right: -5px;
+          margin-top: -30px;
+          font-size: 18px;
+          width: 80%;
+
+
+        }
+
+        .product-description p {
+          margin-top: -30px;
+          margin-right: 10px;
+
+        border: 1px solid green;
+        }
+
+        .product-description button {
+          width: 60%;
+          height: 20px;
+          position: relative;
+          top: 31px;
+          left: 48px;
+        }
+
+
+
+
+        .product-description:hover {
+
+          z-index: 2;
+        }
+    </style>
+  </head>
+  <body>
+<div class="productcard-parent">
+  <div class="productcard-image">
+    <img src="Photos/tuborg.png" alt="">
+    <div class="productsmall-image">
+
+    </div>
+  </div>
+  <div class="product-description">
+    <h3>Tuborg Beer 0.5l</h2>
+    <p>Product Code: KR114</p>
+    <p>Categories:<br>Spreads, Sweets</p>
+    <p>8.99 € (exluding VAT)</p>
+  <form action="#">
+    <label for="quantity">Choose Quantity</label>
+      <select name="quantity" id ="quantity" required>
+        <option value="1kg">1kg</option>
+        <option value="2kg">2kg</option>
+        <option value="3kg">3kg</option>
+      </select>
+
+      <button type="submit" id="quantity">Add To Cart</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
